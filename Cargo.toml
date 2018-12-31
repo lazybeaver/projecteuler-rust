@@ -1,0 +1,7 @@
+[package]
+name = "euler"
+version = "0.1.0"
+authors = ["Ananth Shrinivas <ananth.shrinivas@gmail.com>"]
+
+[dependencies]
+bitvec-rs = "0.1.0"

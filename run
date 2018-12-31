@@ -1,0 +1,22 @@
+#!/bin/bash
+
+set -eu
+
+targets="$@"
+if [[ "${targets}" = "" ]]
+then
+  targets=$(cargo run 2>&1 | awk -F: '$0 ~ /^available binaries.*/ {gsub(" ", "", $2); print $2}' | tr ',' '\n' | sort -tp -n -k2)
+  cargo build --release
+  cargo test --release
+fi
+
+for target in ${targets}
+do
+  echo "===== ${target} ====="
+  cargo build --release --bin "${target}"
+  echo "--------------------------------------------------------------------------------"
+  cargo test --release --bin "${target}"
+  echo "--------------------------------------------------------------------------------"
+  cargo -q run --release --bin "${target}"
+  echo "================================================================================"
+done
