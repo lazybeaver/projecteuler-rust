@@ -24,7 +24,7 @@ fn longest_collatz_chain(limit: usize) -> usize {
 
 fn main() {
     let result = longest_collatz_chain(1000000);
-    println!("Number < 1M with longest collatz chain: {:?}", result);
+    println!("Number <= 1M with longest collatz chain: {:?}", result);
 }
 
 #[test]
