@@ -5,3 +5,4 @@ authors = ["Ananth Shrinivas <ananth.shrinivas@gmail.com>"]
 
 [dependencies]
 bitvec-rs = "0.1.0"
+num = "0.2.0"
