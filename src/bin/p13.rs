@@ -125,7 +125,7 @@ fn main() {
 }
 
 #[test]
-fn test_sum_of_multiples() {
+fn test_sum_of_bigints() {
     assert_eq!(
         parse_or_zero("5537376230390876637302048746832985971773659831892672"),
         sum_bigint()
