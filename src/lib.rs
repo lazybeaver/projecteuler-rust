@@ -1,5 +1,4 @@
-// External crates used by modules
-extern crate bitvec_rs;
+// Import other modules and export public symbols.
 
 mod fibonacci;
 pub use fibonacci::Fibonacci;

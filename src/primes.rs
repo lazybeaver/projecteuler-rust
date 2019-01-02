@@ -1,4 +1,6 @@
-use bitvec_rs::BitVec;
+extern crate bitvec_rs;
+
+use self::bitvec_rs::BitVec;
 
 fn isqrt(num: usize) -> usize {
     ((num as f64).sqrt().ceil()) as usize
