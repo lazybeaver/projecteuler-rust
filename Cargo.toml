@@ -7,3 +7,4 @@ authors = ["Ananth Shrinivas <ananth.shrinivas@gmail.com>"]
 bitvec-rs = "0.1.0"
 multiarray = "0.1.3"
 num = "0.2.0"
+rust-embed="4.2.0"
